@@ -7,23 +7,5 @@ This is the **waruPortal Maintenance App**. When `waruPortal` is down for mainte
 
 The only only contains a `html` landing page which informs the user of ongoing maintenance.
 
-To deploy this app:
-
-```sh
-ssh tpw2@waru.ibers.aber.ac.uk
-
-cd ~/
-
-./maintenance_mode.sh
-```
-
-The `maintenance_mode` bash script does the following;
-
-* Clones the `waruPortal-maintenance` repository from GitHub
-* Stops the `shiny-server` service
-* Deletes the `waruPortal` from `/srv/shiny-server/`
-* Copies `~/waruPortal-maintenance` to `/srv/shiny-server/waruPortal-maintenance`
-* Restarts the `shiny-server` service
-
 
 ![alt text](www/WARU_banner.jpg)
