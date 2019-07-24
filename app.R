@@ -5,7 +5,7 @@ ui <- fluidPage(
 
 )
 server <- function(input, output, session) {
-  
+  options(shiny.port = 3838, shiny.host = "0.0.0.0")
 }
 
 shinyApp(ui = ui, server = server)
