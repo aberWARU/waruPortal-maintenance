@@ -1,7 +1,7 @@
 
 ui <- fluidPage(
    includeHTML('html/maintenance.html'),
- theme = shinytheme('yeti')
+ theme = shinythemes::shinytheme('yeti')
 
 )
 server <- function(input, output, session) {
