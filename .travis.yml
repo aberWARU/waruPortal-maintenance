@@ -8,4 +8,6 @@ install:
   - R -e 'if (system.file(package="packrat") == "") install.packages("packrat")'
   - R -e "packrat::packify(); packrat::restore()"
 
-
+script:
+  - R Rscript test-app.R
+  
