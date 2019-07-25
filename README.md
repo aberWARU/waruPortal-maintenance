@@ -6,10 +6,4 @@ This is the **waruPortal Maintenance App**. When `waruPortal` is down for mainte
 
 The only only contains a `html` landing page which informs the user of ongoing maintenance.
 
-To deploy; 
-
-* Clone the repository
-* Move the clone repository to `/srv/shiny-server`
-* Restart shiny-server
-
 
