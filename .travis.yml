@@ -5,4 +5,6 @@ cache:
   packages: true
 install:
   - R -e "0" --args --bootstrap-packrat
+script:
+  - Rscript test_app.R
 warnings_are_errors: false
