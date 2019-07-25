@@ -1,12 +1,4 @@
 language: r
-before_install:
-- sudo mkdir -p /usr/lib/R/library
-- echo 'R_LIBS=/usr/lib/R/library:/usr/lib/R/site-library/' > ~/.Renviron
-- sudo chmod 2777 /usr/lib/R/library
-
-install:
-  - R -e 'if (system.file(package="packrat") == "") install.packages("packrat")'
-  - R -e "packrat::packify(); packrat::restore()"
 
 script:
   - R Rscript test-app.R
