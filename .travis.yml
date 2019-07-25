@@ -1,7 +1,8 @@
 language: r
 
+sudo: false
+
 install:
-  - R -e "install.packages('packrat')"
   - R -e "0" --args --bootstrap-packrat
   - R -e "packrat::restore(restart = FALSE)"
 
@@ -14,5 +15,7 @@ cache:
     - $TRAVIS_BUILD_DIR/packrat/lib
 
 script:
-  - R Rscript test-app.R
-  
+  - Rscript test-app.R
+
+notifications:
+  email: false
